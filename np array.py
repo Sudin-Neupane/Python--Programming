@@ -1,7 +1,7 @@
 #create array of length 5
 import numpy as np
-data=np.zeros(5)
-print(data)
+da=np.zeros(5)
+print(da)
 #create array of length 5
 data=np.ones(5)
 print(data)
@@ -37,4 +37,30 @@ data=np.arange(10)
 print(data)
 d=np.ones_like(data)
 print(d)
+#creates identity matrix of 3x3
+data=np.eye(3)
+print(data)
+#creates identity matrix of 4x
+data=np.identity(4)
+print(data)
+print(da)
+data=np.array([1,3,5,8],dtype='int64')
+print(data)
+data=np.array([1,3,5,8],dtype='int64')
+print(data)
+data=data.astype('float64')
+print(data)
+data=data.astype(np.float32)
+print(data)
 
+def new_func():
+    data=np.array(['2.5','3.7','9.1'],dtype=np.string_)
+    print(data)
+    data=data.astype('float64')
+    print(data)
+    print(data.dtype)
+data=np.array(['2.5','3.7','9.1f'],dtype=np.string_)
+print(data)
+data=data.astype('float64') #Error
+print(data)
+print(data.dtype)
