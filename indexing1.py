@@ -10,3 +10,13 @@ a[2]=10 #modifying element at index 2
 a[4:6]=11 #modifying element from index 4 to 5
 print("Array Elements:")
 print(a)
+a = np.array([1,2,3,4,5,6,7,8,9])
+aslice=a[3:7]
+aslice[1]=15 #modification will be reflected in original array
+print("Array Elements:")
+print(a)
+a = [1,2,3,4,5,6,7,8,9]
+aslice=a[3:7]
+aslice[1]=15 #modification will not be reflected in original list
+print("List Elements:")
+print(a)
