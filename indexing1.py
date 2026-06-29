@@ -13,7 +13,7 @@ print(a)
 a = np.array([1,2,3,4,5,6,7,8,9])
 aslice=a[3:7]
 aslice[1]=15 #modification will be reflected in original array
-print("Array Elements:")
+print("Array Elements B:")
 print(a)
 a = [1,2,3,4,5,6,7,8,9]
 aslice=a[3:7]
