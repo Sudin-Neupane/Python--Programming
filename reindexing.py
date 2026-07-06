@@ -1,0 +1,18 @@
+import pandas as pd
+s= pd.Series(range(3), index=[1, 2, 3])
+print(s)
+print(s.index)
+print(pd.Int64Index(s))
+#s.index[1]='d'# index is immutable
+obj = pd.Series([4.5, 7.2, -5.3, 3.6], index=['d', 'b', 'a', 'c'])
+print(obj)
+obj1 = obj.reindex(['a', 'b', 'c', 'd', 'e'])
+print(obj1)
+obj2=obj.reindex(['a', 'b', 'c', 'd', 'e'], fill_value=0)
+print(obj2)
+obj = pd.Series(['blue', 'purple', 'yellow'], index=[0, 2, 4])
+print(obj)
+obj1=obj.reindex(range(6), method='ffill')
+print(obj1)
+obj2=obj.reindex(range(6), method='bfill')
+print(obj2)
