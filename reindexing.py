@@ -2,7 +2,7 @@ import pandas as pd
 s= pd.Series(range(3), index=[1, 2, 3])
 print(s)
 print(s.index)
-print(pd.Int64Index(s))
+print(pd.Index(s))
 #s.index[1]='d'# index is immutable
 obj = pd.Series([4.5, 7.2, -5.3, 3.6], index=['d', 'b', 'a', 'c'])
 print(obj)
