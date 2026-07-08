@@ -1,0 +1,12 @@
+f = open(r"C:\Users\SANJIV NEUPANE\Downloads\pyfile.txt", 'r')
+s = f.read()
+print(s)
+f.close()
+f = open(r"C:\Users\SANJIV NEUPANE\Downloads\pyfile.txt", 'a')
+f.write("\nI study in Asian school of management and technology")
+f.close()
+f = open(r"C:\Users\SANJIV NEUPANE\Downloads\pyfile.txt", 'r')
+s=f.read()
+print(s)
+f.close()
+

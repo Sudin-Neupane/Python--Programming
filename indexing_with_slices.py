@@ -1,0 +1,10 @@
+import numpy as np
+a = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+print("Array Elements:")
+print(a)
+print("First Two Rows")
+print(a[0:2])# Or print(a[:2])
+print("First Two Columns of array")
+print(a[:,0:2])
+print("2x2 slice in top-left corner")
+print(a[0:2,0:2])
